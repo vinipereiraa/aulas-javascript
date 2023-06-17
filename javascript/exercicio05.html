@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício05 JavaScript</title>
+</head>
+<body>
+    <!--- script para conferir se você é maior ou menor de idade (se a idade for menor ou igual a 18 anos "você é maior de idade" senão "Menor de idade") --->
+    <script type="text/javascript">
+        function idade(num) {
+            var x = document.getElementById(num).value; 
+            if (x >= 18) {
+                document.getElementById('result') .innerText = "Maior de Idade"; 
+            }else {
+                document.getElementById('result') .innerText = "Menor de Idade";
+            }
+        }
+    </script>
+
+    <h1>Trabalhando com estruturas e funções em JavaScript</h1>
+    <input type="text" id="txtidade" name="idade">
+    <input type="button" value="Verificar" id="btVerifica" name="verifica" onclick="idade('txtidade')";><br><br>
+    <label id="result"></label>
+</body>
+</html>

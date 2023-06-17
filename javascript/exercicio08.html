@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício08 - JavaScript</title>
+</head>
+<body>
+    <!--- script para exibir um pop up que onde você possa digitar uma cor do farol e ele exibirá uma mensagem (vermelho = pare!, amarelo = atenção! e verde = pode ir mano)--->
+    <script type="text/javascript">
+        // com o comando "prompt" irá aparecer uma tela de comando com as seguintes mensagens escritas dentro dos parenteses, que é 'Digite um valor do sinal'
+        farol = prompt("Digite um valor do sinal:" , "Digite Aqui!");
+
+        switch(farol){
+            case "vermelho":
+                alert("PARE!"); // quandoa pessoa digitar "vermelho" no pop up, será exibida esse alert
+                break;
+
+                case "amarelo":
+                    alert("ATENÇÃO!"); // quandoa pessoa digitar "amarelo" no pop up, será exibida esse alert
+                    break;
+
+                    case "verde":
+                        alert("PODE IR MANO"); // quandoa pessoa digitar "verde" no pop up, será exibida esse alert
+                        break;
+        }
+    </script>
+</body>
+</html>
